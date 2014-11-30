@@ -1,0 +1,22 @@
+{
+  "author": "Jack Callister",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.12.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.1.18",
+    "jsx-loader": "^0.12.1",
+    "react-tools": "^0.12.1",
+    "webpack": "^1.4.12"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/support/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  }
+}

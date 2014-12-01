@@ -24,10 +24,9 @@ var App = React.createClass({
   },
 
   render: function() {
-    var t = this;
     var listItems = this.props.items.map(function(item, i) {
-      return <li key={"item" + i} onClick={t.onSelectItem.bind(null, i)}>{item.title}</li>
-    });
+      return <li key={"item" + i} onClick={this.onSelectItem.bind(null, i)}>{item.title}</li>
+    }.bind(this));
 
     return (
       <div> 
